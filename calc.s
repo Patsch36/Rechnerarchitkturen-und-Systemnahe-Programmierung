@@ -41,7 +41,7 @@ main:
     add $t5, $t2, $t3   # add first two results
     add $t6, $t5, $t4   # add Last result
 
-    sw $t6, Z
+    sw $t6, z
 
 	la $a0, str3	# Load address of string 3 into register $a0
 	li $v0, 4		# Load I/O code to print string to console
