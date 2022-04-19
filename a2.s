@@ -9,8 +9,8 @@ calc5:
     sw $fp, 4($sp)          # save $fp
     addi $fp, $sp, 12       # set $fp to begin of frame
     sw $ra, -4($fp)         # save  $ra on stack
-    li $to, -1
-    sw $to -12($fp)         # set res to -1
+    li $t0, -1
+    sw $t0 -12($fp)         # set res to -1
 
     #addi $t0, $zero, -1     # res = -1
 
@@ -41,7 +41,7 @@ save_div:
 
 # code
 #
-.globl main			
+.global main			
 .text
 
 main:
